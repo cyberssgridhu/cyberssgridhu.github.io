@@ -2209,3 +2209,18 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+
+/* Mobile devices */
+@media (max-width: 575.98px) {
+  .custom-image {
+    width: 80%;
+  }
+}
+
+/* Other devices (larger than mobile) */
+@media (min-width: 576px) {
+  .custom-image {
+    width: auto;
+  }
+}
