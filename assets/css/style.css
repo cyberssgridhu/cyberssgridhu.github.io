@@ -50,6 +50,15 @@ h6 {
   transition: all 0.4s;
 }
 
+#hero .carousel-indicators li {
+ visibility: hidden; 
+}
+
+
+.btn-primary{
+  background: #8f1a00;
+  --bs-btn-border-color:#ffffff
+}
 .back-to-top i {
   font-size: 28px;
   color: #fff;
@@ -2223,4 +2232,40 @@ section {
   .custom-image {
     width: auto;
   }
+}
+
+
+.publication-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+
+.event-schedule {
+  margin-top: 2rem;
+}
+
+.event-schedule h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.event-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-schedule th,
+.event-schedule td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.event-schedule th {
+  font-weight: bold;
+  background-color: #f8f9fa;
+}
+
+.event-schedule tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

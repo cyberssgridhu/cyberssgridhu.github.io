@@ -67,30 +67,21 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
           <!-- <li><a href="services.html">Services</a></li> -->
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="publications.html">Publications</a></li>
+          <!-- <li><a href="publications.html">Publications</a></li> -->
           <li><a href="team.html">Team</a></li>
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
           <li><a href="blog.html">Blog</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown">
+            <a href="#"><span>Work</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="publications.html"><i class="bi bi-journal-text"></i> Publications</a></li>
+              <li><a href="#"><i class="bi bi-card-checklist"></i> Graduation projects</a></li>
+              <li><a href="#"><i class="bi bi-lightbulb"></i> Prototypes</a></li>
             </ul>
-          </li> -->
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -124,13 +115,13 @@
 
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
       </a>
 
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      </a> -->
 
     </div>
   </div>
@@ -194,32 +185,46 @@
 
     <!-- ======= About Section ======= -->
 
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>In breif</h2>
+ <!-- Add this custom CSS in your existing CSS file or within a <style> tag in the <head> section of your HTML document -->
+<style>
+  .about-img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<!-- Updated HTML -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-title mb-5">
+      <h2>In Brief</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="assets/img/about.jpg" class="img-fluid about-img" alt="">
+      </div>
+      <div class="col-lg-6 d-flex align-items-center mt-lg-0 mt-5">
+        <div class="content">
+          <h3>Smart Grids and Cyber-Physical Threats</h3>
+          <p class="fst-italic">
+            The Smart Grid aims to increase the efficiency of the power grid using technologies like smart metering, renewable energy integration, electric vehicle and demand response. However, it is susceptible to cyber-physical attacks that can cause power failure or equipment malfunction at HV/MV and LV levels. To solve the smart grid security challenges, cyber-physical threats must be evaluated.
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Investigate the impact of cyber-physical threats on the power network at HV/MV and LV levels using simulations and real data.</li>
+            <li><i class="bi bi-check-circle"></i> Develop a risk assessment procedure for cyber-physical threats on the proposed power distribution network (LV).</li>
+            <li><i class="bi bi-check-circle"></i> Improve the smart grid system's performance and its security protocols, architectures, and response to ongoing attacks.</li>
+          </ul>
+          <p>
+            The project aims to evaluate the resilience of smart grid systems at HV, MV, and LV levels. It will test the impact of cyber-physical threats on real LV networks, including components like renewable energy systems, smart metering, and EV charging stations. The project will help develop a cyber-security strategy to address the impact of cyber-physical threats on distributed energy resources in the energy sector.
+          </p>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3>Smart Grids and Cyber-Physical Threats</h3>
-            <p class="fst-italic">
-              The Smart Grid aims to increase the efficiency of the power grid using technologies like smart metering, renewable energy integration, electric vehicle and demand response. However, it is susceptible to cyber-physical attacks that can cause power failure or equipment malfunction at HV/MV and LV levels. To solve the smart grid security challenges, cyber-physical threats must be evaluated.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Investigate the impact of cyber-physical threats on the power network at HV/MV and LV levels using simulations and real data.</li>
-              <li><i class="bi bi-check-circle"></i> Develop a risk assessment procedure for cyber-physical threats on the proposed power distribution network (LV).</li>
-              <li><i class="bi bi-check-circle"></i> Improve the smart grid system's performance and its security protocols, architectures, and response to ongoing attacks.</li>
-            </ul>
-            <p>
-              The project aims to evaluate the resilience of smart grid systems at HV, MV, and LV levels. It will test the impact of cyber-physical threats on real LV networks, including components like renewable energy systems, smart metering, and EV charging stations. The project will help develop a cyber-security strategy to address the impact of cyber-physical threats on distributed energy resources in the energy sector.
-            </p>
-          </div>
+      </div>
+      </div>
+  
         </div>
       </div>
     </section><!-- End About Section -->
+    
 
    <!-- ======= Services Section ======= -->
 <section id="services" class="services">
