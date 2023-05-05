@@ -2269,3 +2269,34 @@ section {
 .event-schedule tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+
+
+.skill {
+  font-weight: 600;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.skill .val {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.progress {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background-color: #3498db;
+  border-radius: 5px;
+  height: 7px;
+  position: relative;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
